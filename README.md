@@ -9,4 +9,4 @@ Download youtube videos
 
 # Information
 
-It may take some time to download a video
+It may take some time to download a youtube video
