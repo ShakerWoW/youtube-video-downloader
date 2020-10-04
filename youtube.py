@@ -64,5 +64,5 @@ Entry(window, width=50, textvariable=url).grid(sticky=N, row=2)
 
 Button(window, width=10, text="Download", font=("Calibri", 12), command=download, fg="#fff", background="#c00").grid(sticky=N, row=3, pady=15)
 
-
+window.iconbitmap("image/icon.ico")
 window.mainloop()
