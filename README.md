@@ -1,4 +1,4 @@
-# youtube video downloader
+# Youtube Video Downloader (YVD)
 Download youtube videos
 
 # Install
@@ -6,3 +6,7 @@ Download youtube videos
 * cd youtube-video-downloader
 * pip install -r requirements.txt
 * python3 youtube.py
+
+# Information
+
+It may take some time to download the video
