@@ -25,15 +25,15 @@ def download():
 
 
 		youtube = pytube.YouTube(video_url)
-		video   = youtube.streams.filter(adaptive=True).first().download()
+		video = youtube.streams.filter(adaptive=True).first().download()
 		os.rename(video, "video.mp4")
-		song    = youtube.streams.filter(only_audio=True).first().download()
+		song = youtube.streams.filter(only_audio=True).first().download()
 		os.rename(song, "song.mp3")
 		
 		clip = mp.VideoFileClip("video.mp4")
-		audio_bg = mp.AudioFileClip("song.mp3")
+		audio = mp.AudioFileClip("song.mp3")
 		
-		final_clip = clip.set_audio(audio_bg)
+		final_clip = clip.set_audio(audio)
 		final_clip.write_videofile(name)
 		os.remove("video.mp4")
 		os.remove("song.mp3")
