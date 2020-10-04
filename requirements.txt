@@ -1,5 +1,4 @@
 moviepy
 os-sys
 pytube3
-pytube
 pywin32
