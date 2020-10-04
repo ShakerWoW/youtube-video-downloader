@@ -11,6 +11,11 @@ def hide():
     win32gui.ShowWindow(window,0)
     return True
 
+def view():
+    window = win32console.GetConsoleWindow()
+    win32gui.ShowWindow(window,1)
+    return True
+
 def download():
 	video_url = url.get()
 	try:
@@ -66,3 +71,5 @@ Button(window, width=10, text="Download", font=("Calibri", 12), command=download
 
 window.iconbitmap("image/icon.ico")
 window.mainloop()
+
+view()
